@@ -1,10 +1,10 @@
-import { WorkflowRunDetails } from '@/types/github';
+import type { WorkflowRunDetails as WorkflowRunDetailsType } from '@/types/github';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 
 interface Props {
-  run: WorkflowRunDetails;
+  run: WorkflowRunDetailsType;
 }
 
 export const WorkflowRunDetails = ({ run }: Props) => {
